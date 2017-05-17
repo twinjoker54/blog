@@ -11,6 +11,12 @@
 	<body>
 		
 		<div id="root" class="container">
+			
+			<modal v-show="showModal" @close="showModal=false">
+				<p>We insert any text</p>
+			</modal>
+			
+			<button @click="showModal=true">Show Modal</button>
 		
 		</div>
 		
