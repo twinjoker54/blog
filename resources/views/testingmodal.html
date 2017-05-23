@@ -12,15 +12,12 @@
 		
 		<div id="root" class="container">
 			
-			<modal v-show="showModal" @close="showModal=false">
-				<p>We insert any text</p>
-			</modal>
-			
-			<button @click="showModal=true">Show Modal</button>
+			<modal v-if="showModal" @close="showModal = false"></modal>
+			<button @click="showModal = true">Show Modal</button>
 		
 		</div>
 		
 		<script src="https://unpkg.com/vue@2.3.3/dist/vue.js"></script>
-		<script src="js/main.js"></script>
+		<script src="js/mainModal.js"></script>
 	</body>
 </html>
