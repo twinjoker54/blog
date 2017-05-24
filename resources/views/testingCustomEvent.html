@@ -11,12 +11,14 @@
 	<body>
 		
 		<div id="root" class="container">
-		
 			
-		
+			<coupon @applied="onCouponApplied"></coupon>
+			
+			<h1 v-if="couponApplied">You used a coupon!</h1>
+			
 		</div>
 		
 		<script src="https://unpkg.com/vue@2.3.3/dist/vue.js"></script>
-		<script src="js/main.js"></script>
+		<script src="js/mainCustomEvent.js"></script>
 	</body>
 </html>
